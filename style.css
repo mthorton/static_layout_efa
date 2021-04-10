@@ -1,0 +1,324 @@
+
+html{
+    height: 2000px;
+    margin: auto;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body, button, input, select, textarea{
+    font-family: 'Overpass', 'Open Sans', Helvetica, Arial, sans-serif;
+    letter-spacing: .025em;
+    background-color: #efefef;
+}
+
+.cares-message, .learn-button, .x-button{
+    display: inline-block;
+}
+
+.cares-banner{ /* Color: #fdb715 */
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 7%;
+    min-height: 33px;
+    border-bottom: 0px solid transparent;
+    box-shadow: 0 0px 10px 0px rgb(0 0 00 / 35%); /* I can't visually see what this does*/
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 1.1px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    -webkit-text-size-adjust: 100%;
+    color: #040502;
+    background-color: #fdb715;
+    z-index: 10;
+}
+
+.learn-button{
+    border-radius: 3px;
+    border: transparent;
+    color: white;
+    background-color: #434345;
+    font-size: 14px;
+    padding: 5px 8px;
+}
+
+.x-button img{
+    width: 16px;
+    height: auto;
+    position: absolute;
+    left: 99%;
+    top: 2px;
+}
+
+/*----------------------------------------EFA Header-------------------------------------------*/
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.header-container{
+    display: flex;
+    flex-wrap: inherit;
+    position: fixed;
+    width: 100%;
+    height: 9%;
+    top: 7%;
+    left: 0px;
+    background-color: #2d2d2d;
+    z-index: 4;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 10;
+    
+}
+.header-container h5{
+    font-size: 11px;
+}
+.home-button-logo-box img{
+    flex: 1;
+    max-height: 55px;
+    vertical-align: middle;
+    top: -1px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.home-button-text-box{
+    flex: 7;
+    color: white;
+    font-family: 'Crimson Text',"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 10px;
+    justify-content: flex-start;
+    margin-right: 150px;
+    margin-left: 15px;
+    font-weight: lighter;
+}
+.courses-box{
+    flex: 1;
+    letter-spacing: 0.25em;
+    padding: 0 11px;
+}
+.admissions-box{
+    flex: 1;
+    letter-spacing: 0.25em;
+    padding-right: 10px;
+}
+.veterans-box{
+    flex: 1;
+    letter-spacing: 0.25em;
+    padding-right: 10px;
+}
+.about-box{
+    flex: 1;
+    letter-spacing: 0.25em;
+    padding-right: 10px;
+}
+.campus-box{
+    flex: 1;
+    letter-spacing: 0.25em;
+    padding-right: 10px;
+}
+.employers-box{
+    flex: 1;
+    letter-spacing: 0.25em;
+    padding-right: 5px;
+}
+.search-icon-box img{
+    flex: 1;
+    width: 28px;
+    height: auto;
+    padding-right: 10px;
+}
+.schedule-box{
+    flex: 4;
+    background-color: #348db9; 
+    border-left: 3px solid white;
+    align-self: stretch;
+    text-align: center;
+    /* padding-top: 7px; */
+    font-size: 20px;
+}
+
+.apply-box{
+    flex: 2;
+    background-color: #e33e42;
+    border-left: 3px solid white;
+    align-self: stretch;
+    text-align: center;
+    /* padding-top: 7px; */
+    font-size: 20px;
+}
+
+/*-------------------------------------------Main Top-------------------------------------*/
+.main-content-container video{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+.main-content-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+}
+.video-content-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 47%;
+    left: 17%;
+}
+.free-course-banner{
+    width: 980px;
+    max-width: 1220px;
+    height: 70px;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    letter-spacing: .15em
+    ;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 13px;
+}
+.learn-more-button{
+    width: 260px;
+    height: 30px;
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: #e33e42;
+    box-shadow: none;
+    font-weight: 800;
+    letter-spacing: .075em;
+    padding: .39em .65em .34em;
+}
+.contact img{
+    position: fixed;
+    z-index: 5;
+    left: 83%;
+    top: 85%;
+    width: 16%;
+}
+.chat-now img{
+    position: fixed;
+    z-index: 5;
+    left: 83%;
+    top: 95%;
+    width: 16%;
+    height: auto;
+}
+.arrow-down img{
+    position: absolute;
+    z-index: 5;
+    width: 5%;
+    left: 48%;
+    top: 103%;
+}
+
+/*------------------------------------Main Bottom---------------------------------------*/
+#course-info{
+    position: absolute;
+    display: block;
+    top: 130%;
+    text-align: center;
+    width: 100%;
+    font-size: 70px;
+    color: #348db9;
+    letter-spacing: 0.1em;
+}
+.main-bottom-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 160%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 800px;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0;
+}
+.main-bottom-container h2{
+    font-size: 40px;
+    padding: 0 40px;
+    letter-spacing: 0.10em;
+    font-weight: bold;
+}
+.main-bottom-container p{
+    padding: 0 40px;
+    font-size: 18px;
+    line-height: 40px;
+    opacity: .5;
+}
+.tile1-box{
+    flex: 1 1 0px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    margin-right: 10px;
+    margin-left: 0px;
+    max-height: auto;
+}
+#b1{
+    position: relative;
+    background-color: #e33e42;
+    top: 17%;
+    left: -2.5%;
+    width: 105%;
+    height: 8%;
+    text-align: center;
+    padding-top: 5%;
+}
+.tile2-box{
+    flex: 1 1 0px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#b2{
+    position: relative;
+    background-color: #e33e42;
+    top: 9.5%;
+    left: -2%;
+    width: 104%;
+    height: 8%;
+    text-align: center;
+    padding-top: 5%;
+
+}
+.tile3-box{
+    flex: 1 1 0px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+#b3{
+    position: relative;
+    background-color: #e33e42;
+    top: -5.5%;
+    left: -2%;
+    width: 104%;
+    height: 8%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+
+
+
